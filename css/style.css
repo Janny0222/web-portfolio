@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh !important;
+  width: 100%;
+}
+.wel-port{
+  background-image: url(https://media1.giphy.com/media/cQhmYBg9qPaLYdqajA/giphy.gif?cid=ecf05e472exc5k3nceyjl2u51083flwreujv3kp67jc2p6z6&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: block;
+  height: 100vh;
+  width: 100%;
+ }
+ .front-bg{
+  background: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+ }
+ .navi-1{
+  padding: 0rem !important;
+
+ }
+#wmp{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 5rem;
+/*  font-weight: 900;*/
+  text-align: center;
+  color: white;
+  padding: 8rem 0;
+/*  text-shadow: 2px 3px 2px #000000, 9px 8px 0px rgba(0,0,0,0.8);*/
+ }
+ .sub-wel{
+  align-self: center;
+  text-align: right;
+  margin-right: 0.8rem;
+  color: whitesmoke;
+ }
+ .capstone{
+  list-style-type: none;
+  text-align: center;
+ }
+.a-disabled{
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.6;
+}
+.soc-med{
+  list-style-type: none;
+}
+.link-img1, .link-img2, .link-img3, .link-img4{
+  cursor: pointer;
+}
+.link-img1{
+  click
+}
+.ol-link{
+  margin: 0 !important;
+  padding: 1rem !important;
+  margin-bottom: 2rem !important;
+}
+h2 {
+  font-size: 3rem !important;
+}
+.select-1:hover{
+  color: blue !important;
+  font-weight: bold;
+}
+  
