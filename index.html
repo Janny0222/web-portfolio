@@ -2,399 +2,296 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
-
-  
   <title>Jan Michael Villaruel | Portfolio</title>
-  
-  
+
+  <!-- External Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Icon -->
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+   <!-- External CSS -->
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+  <header>
+          <nav id="navbar" class="bg-gradient-dark navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid" >
+              <a class="navbar-brand pl-lg-3 ms-md-auto" href="#"><h1 class="" id="h1-name"><span id="logo1"></span><span id="logo2" class="text-primary"></span></h1></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ">
+                  <li class="nav-item">
+                    <a id="navhome" class="nav-link menu" href="#landing">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="navabout" class="nav-link menu" href="#about-me">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="navproj" class="nav-link menu" href="#my-project">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="navcontact" class="nav-link menu " href="#contact-me">Contact Me</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+  </header>
   
- 
-  <main>
-     <!-- Navbar -->
-    <header>
-      <nav class="navbar navbar-expand-lg bg-secondary-subtle text-dark fixed-top navi-1">
-        
-        <div class="container-fluid">
-          
-          <a class="navbar-brand fw-bold text-dark" href="#landing-section">
-            <img src="./img/logo.png" width="50">
-            Villaruel
-          </a>
-          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            
-            <ul class="navbar-nav ms-auto mb-lg-0">
-              
-              <li class="nav-item">
-                <a class="h6 text-decoration-none text-dark mx-2 select-1" href="#home-section">Home</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="h6 text-decoration-none text-dark mx-2 select-1" href="#landing-section">About</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="h6 text-decoration-none text-dark mx-2 select-1" href="#slides-section">Slides</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="h6 text-decoration-none text-dark mx-2 select-1" href="#project-section">Project</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="h6 text-decoration-none text-dark mx-2 select-1" href="#tool-section">Tools</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="h6 text-decoration-none text-dark mx-2 select-1" href="#contact-section">Contact</a>
-              </li>
-              
-            </ul>
-            
-          </div>
-          
-        </div>
-      </nav>
-    </header>
-    <!-- End of Navbar -->
-
-    <!-- Home -->
-    <section class="wel-port" id="home-section">
-      <div class="front-bg">
-        <h1 class="wpm" id="wmp">Welcome to My Website</h1>
-        <p class="sub-wel">Thank you for visiting my website. I am delighted to have you here.</p>
-        <p class="sub-wel">I dedicated to providing exceptional products/services and delivering a seamless user experience.</p>
-        <p class="sub-wel"> Through innovation, collaboration, and attention to detail, I strive to exceed your expectations.</p>
-      </div>
-    </section>
-    <!-- End of Home -->
-
-    <!-- Landing Section -->
-    <section class="container-fluid py-5 py-5 h-100" id="landing-section">   
-      <div class="row row-cols-1 row-cols-md-2 align-items-center flex-column-reverse flex-md-row">
-        <div class="offset-xl-2 col-xl-4 px-5 pt-4 text-center-justify">
-          <div><h1 class="fs-1" >About Me</h1></div>
-          <div ><p class="">Hello, I'm Jan Michael Villaruel. I am apassionate and dedicated developer with strong interest in Full-Stack Developer. I ama constant learner and always strive to stayup-to-date with the latest advancements inmy field. I enjoy tackling challenges, solvingproblems, and collaborating with others todeliver exceptional results. My goal is tobecome a Software Engineer and make ameaningful impact in Tech Industry.</p></div>
-        </div>
-        <div class="col-xl-4 px-5">
-          <img src="./img/pic.png" class="img-fluid rounded-circle w-100">
-          <div class="text-center py-3"><h3 class="border-bottom w-auto border-primary h1"> Jan Michael Villaruel</h2>
-          <h3 class="fst-italic">Full Stack Web Developer</h3></div>
-        </div>
-      </div>
-    </section>
-    <!-- End of Landing Section -->
-
-    <!-- Slide Section -->
-    <section class="container-fluid p-5" id="slides-section">
-      <div id="carouselExampleCaptions" class="carousel slide offset-xl-1 col-xl-10" data-bs-ride="false">
-        
-        <div class="carousel-indicators ">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="bg-dark" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="bg-dark" aria-label="Slide 3"></button>
-        </div>
-        
-        <div class="carousel-inner">
-          <div class="carousel-item active h-50">
-            <img src="./img/html.jpg" class="img-fluid w-100">
-            <div class="carousel-caption d-none d-lg-block">
-              <h5 class="display-3 text-capitalize fw-bold text-dark">HTML</h5>
-              <p class="text-dark ">HTML (Hypertext Markup Language) is the standard markup language used for creating and structuring web pages. It provides a set of tags and elements that define the structure and content of a webpage. HTML documents consist of a series of nested elements, forming a hierarchical structure.</p>
+<section id="landing" class="container-fluid d-flex justify-content-center align-items-center"  id="home">
+    <div class = "row">
+        <div class = "col">
+          <div id="landing-name" data-aos="fade-down">
+            <div class="name-container">
+                <span class="fname">JAN MICHAEL</span>
+                <span class="fname text-primary lastname ">VILLARUEL</span>
             </div>
-          </div>
-          <div class="carousel-item h-50">
-            <img src="./img/bootstrap.jpg" class="d-block w-100">
-            <div class="carousel-caption d-none d-lg-block">
-              <h5 class="display-3 text-capitalize fw-bold text-dark ">Bootstrap</h5>
-              <p class="text-dark">Bootstrap is a popular open-source front-end framework that provides a collection of pre-built HTML, CSS, and JavaScript components. It is designed to simplify and speed up the process of creating responsive and mobile-first websites and web applications.</p>
-            </div>
-          </div>
-          <div class="carousel-item h-50">
-            <img src="./img/nodejs.jpg" class="d-block w-100">
-            <div class="carousel-caption d-none d-lg-block">
-              <h5 class="display-3 text-capitalize fw-bold text-dark">Node.js Server</h5>
-              <p class="text-dark">Node.js is an open-source, cross-platform JavaScript runtime environment built on Chrome's V8 JavaScript engine. It allows developers to run JavaScript code outside of a web browser, enabling server-side execution of JavaScript. Node.js provides a scalable, event-driven architecture that makes it suitable for building fast and efficient network applications.</p>
-            </div>
+        </div>
+        <div class="">
+          <div class="m-0 p-0 d-inline-flex" data-aos="fade-up">
+            <p class ="fw-normal" id="pre-title2">
+              <span class="pre-title">Your aspiring </span>
+              <div class="position-relative mx-2">
+                <span id="landing-title" class="text-primary"> </span>
+              </div>
+            </p>
           </div>
         </div>
-        
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        
       </div>
-    </section>
-    <!-- End of Slide Section -->
-    
-    <!-- Project-->
-    <section class="container-fluid py-2 bg-secondary-subtle" id="project-section">
-        
-        <div class="row justify-content-center text-center py-2">
-          <h2 class="text-dark">My Projects</h2>
-          <p class="text-dark col-md-8 col-lg-6">
-            Please free to visit my Project/s that created when I was a bootcamper/trainee.
-          </p>
-        </div>
-        
-        <div class="row row-cols-1 row-cols-md-3 g-4 bg-secondary">
-          
-          <article class="col p-3">
-            <div class="card h-100 align-items-center pt-5 px-3 pb-4 border-0 rounded-0">
-              <img src="./img/capstone1.jpg" class="img-fluid">
-              <div class="card-body text-center">
-                <h5 class="card-title h4 fw-bold">Capstone 1</h5>
-                <p class="card-text text-secondary small">My 1st Portfolio as a Trainee Web Developer/Full Stack Developer. Hope you'll like it. Thank you.</p>
-                <a href="#" class="disabled">Visit Here
-                </a>
-              </div>
-            </div>
-          </article>
+    </div>
+</section>
 
-          <article class="col p-3">
-            <div class="card h-100 align-items-center pt-5 px-3 pb-4 border-0 rounded-0">
-              <img src="./img/capstone2.jpg"class="img-fluid">
-              <div class="card-body text-center">
-                <h5 class="card-title h4 fw-bold">Capstone 2</h5>
-                <p class="card-text text-secondary small">Creating an E-commerce API and hosted using Render</p>
-                <a href="https://capstone2-apple-products-sample.onrender.com" target="_blank" class="disabled">Visit Here
-                </a>
-            </div>
-          </article>
-
-          <article class="col p-3">
-            <div class="card h-100 align-items-center pt-5 px-3 pb-4 border-0 rounded-0">
-              <img src="./img/capstone3.jpg" class="img-fluid">
-              <div class="card-body text-center">
-                <h5 class="card-title h4 fw-bold">Capstone 3</h5>
-                <p class="card-text text-secondary small">Creating full function website using ReactJS with E-commerce API and hosted using Vercel</p>
-                <a href="https://apple-de-app.vercel.app/" target="_blank" class="disabled">Visit Here
-                </a>
-              </div>
-            </div>
-          </article>
-          
-        </div>
-    </section>
-    <!-- End of Project-->
-    
-    <!-- Tools -->
-    <section class="container-fluid bg-secondary-subtle" id="tool-section">
-      <div class="container-fluid p-2">
-        
-        <div class="row justify-content-center text-center pb-4">
-          <h2 class="text-dark">Tools</h2>
-          <p class="text-dark col-md-8 col-lg-6 pt-3">I'm using these tools to help to build my project as Full-Stack Developer</p>
-        </div>
-        
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-
-          <article class="col shadow-lg" >
-            <div class="card h-100 align-items-center pt-5 px-3 pb-4 border-0 rounded-0">
-              <img src="./img/logo-git.png" class="img-fluid">
-              <div class="card-body text-center">
-                <h5 class="card-title h4 fw-bold">Git</h5>
-                <p class="card-text text-secondary">Git is a distributed version control system that allows developers to track changes, collaborate on projects, and manage source code effectively.</p>
-                <a href="https://git-scm.com/doc" target="_blank" class="text-black">Learn More</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="col shadow-lg ">
-            <div class="card h-100 align-items-center pt-5 px-3 pb-4 border-0 rounded-0">
-              <img src="./img/logo-sublime.png" class="img-fluid">
-              <div class="card-body text-center">
-                <h5 class="card-title h4 fw-bold">Sublime</h5>
-                <p class="card-text text-secondary">Sublime Text is a popular text editor that is widely used by developers for coding and programming.</p>
-                <a href="https://www.sublimetext.com/blog/" target="_blank" class="text-black">Learn More</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="col shadow-lg">
-            <div class="card h-100 align-items-center pt-5 px-3 pb-4 border-0 rounded-0">
-              <img src="./img/logo-vs-code.png" class="img-fluid">
-              <div class="card-body text-center">
-                <h5 class="card-title h4 fw-bold">VS Code</h5>
-                <p class="card-text text-secondary">VS Code, short for Visual Studio Code, is a free and highly popular source code editor developed by Microsoft.</p>
-                <a href="https://code.visualstudio.com/docs" target="_blank" class="text-black">Learn More</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="col shadow-lg">
-            <div class="card h-100 align-items-center pt-5 px-3 pb-4 border-0 rounded-0">
-              <img src="./img/logo-bootstrap.png" class="img-fluid">
-              <div class="card-body text-center">
-                <h5 class="card-title h4 fw-bold">Bootstrap</h5>
-                <p class="card-text text-secondary">Bootstrap is a popular open-source front-end framework that provides a collection of pre-built HTML, CSS, and JavaScript components.</p>
-                <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank" class="text-black">Learn More</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="col shadow-lg">
-            <div class="card h-100 align-items-center pt-5 px-3 pb-4 border-0 rounded-0">
-              <img src="./img/logo-mongodb.png" class="img-fluid">
-              <div class="card-body text-center">
-                <h5 class="card-title h4 fw-bold">MongoDB</h5>
-                <p class="card-text text-secondary">MongoDB is a popular open-source NoSQL database management system that provides a flexible and scalable approach to storing and managing data.</p>
-                <a href="https://www.mongodb.com/use-cases/artificial-intelligence" target="_blank" class="text-black">Learn More</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="col shadow-lg">
-            <div class="card h-100 align-items-center pt-5 px-3 pb-4 border-0 rounded-0">
-              <img src="./img/logo-nodejs.png" class="img-fluid">
-              <div class="card-body text-center">
-                <h5 class="card-title h4 fw-bold">Node.js Server</h5>
-                <p class="card-text text-secondary">Node.js is a runtime environment that allows JavaScript code to be executed on the server-side, rather than just in web browsers.</p>
-                <a href="https://nodejs.org/en/docs" target="_blank" class="text-black">Learn More</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="col shadow-lg">
-            <div class="card h-100 align-items-center pt-5 px-3 pb-4 border-0 rounded-0">
-              <img src="./img/logo-react.png" class="img-fluid">
-              <div class="card-body text-center">
-                <h5 class="card-title h4 fw-bold">React JS</h5>
-                <p class="card-text text-secondary">ReactJS, often referred to as React, is an open-source JavaScript library for building user interfaces.</p>
-                <a href="https://react.dev/learn" target="_blank" class="text-black">Learn More</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="col shadow-lg">
-            <div class="card h-100 align-items-center pt-5 px-3 pb-4 border-0 rounded-0">
-              <img src="./img/logo-postman.png" class="img-fluid">
-              <div class="card-body text-center">
-                <h5 class="card-title h4 fw-bold">Postman</h5>
-                <p class="card-text text-secondary">Postman is a widely used API development and testing tool that simplifies the process of working with APIs.</p>
-                <a href="https://www.postman.com/product/what-is-postman/" target="_blank" class="text-black">Learn More</a>
-              </div>
-            </div>
-          </article>
-          
-        </div>
-        
+  <section class="p-md-5 container d-flex justify-content-center align-items-center" id="about-me">
+    <div class="row flex-column-reverse flex-md-row d-flex justify-content-center align-items-center">
+      <div class="col p-md-5 order-md-1 about-me1" data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom">
+        <h1 class="aboutMe text-primary d-block" id="aboutMe">Who am I?</h1>
+        <p class="details d-block" id="details"><em><strong>I am Jan Michael Villaruel, an IT graduate who has worked as a technical support professional in the IT industry. Now, I aspire to pursue a career as a Developer, which is truly my desired path.</strong></em></p>
       </div>
-    </section>
-    <!-- End of Tools -->
-    
-    <!-- Contact Section -->
-    <section id="contact-section">
-      <div class="pt-5 container-fluid">
-        <h4 class=" text-black text-center">For inquiry, Send a Message below</h4>
-           <div class="row row-cols-1 row-cols-md-2 justify-content-center">
-             <!-- <div class="offset-xl-2 col-md-4 px-5 pt-4 justify-content-center"> -->
-               <div class="col-xl-4 px-5 pt-4 ">
-                  <form id="form-col" class="bg-secondary text-light shadow-lg p-3 mb-5 rounded ">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-number">Contact Number</label>
-                        <input type="number" class="form-control" id="contact-number" placeholder="Enter your contact number" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="concern">Concern</label>
-                        <select class="form-control" id="concern">
-                          <option value="">Select a concern</option>
-                          <option value="general">General Inquiry</option>
-                          <option value="support">Support Request</option>
-                          <option value="feedback">Feedback</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
-                    </div>
-                    <button type="button" class="btn btn-dark m-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Send Email</button>
-                  </form>
-               </div>
-           </div>
+      <div class="col-12 col-md-6 py-3 p-md-5 order-md-2" data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom" >
+        <img id="img" src="./img/me.jpg" alt="" class="img-fluid h-100 w-100">
       </div>
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                       <div class="modal-content">
-                          <div class="modal-header bg-secondary-subtle">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Thank you for your mesage </h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                            <div class="modal-body"><p>Successfully Sent!</p>
-                            </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                     </div>
+    </div>
+  </section>
+  <section class="p-md-5 container d-flex justify-content-center align-items-center" id="about-me">
+    <div class="row flex-column-reverse flex-md-row d-flex justify-content-center align-items-center">
+      <div class="col p-md-5 order-md-2" data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom">
+        <h3 class="aboutMe text-primary d-block" id="aboutMe">What I'm capable of?</h3>
+        <p class="techs">I am proficient in a variety of programming languages and technologies. The following are some of the important languages in which I am proficient:</p>
+        <div class="d-inline-block text-center mx-2">
+          <i class="fa-brands fa-js fa-2xl"></i>
+          <div><span class="javascript">Javascript</span></div>
+        </div>
+        <div class="d-inline-block text-center mx-2">
+          <i class="fa-brands fa-java fa-2xl"></i>
+          <div><span class="javascript">Java</span></div>
+        </div>
+        <div class="d-inline-block text-center mx-2">
+          <i class="fa-brands fa-python fa-2xl"></i>
+          <div><span class="javascript">Python</span></div>
+        </div>
+        <div class="d-inline-block text-center mx-2">
+          <i class="fa-brands fa-php fa-2xl"></i>
+          <div><span class="javascript">PHP</span></div>
+        </div>
+        <div class="d-inline-block text-center mx-2">
+          <i class="fa-brands fa-html5 fa-2xl"></i>
+          <div><span class="javascript">HTML</span></div>
+        </div>
+        <div class="d-inline-block text-center mx-2">
+          <i class="fa-brands fa-css3 fa-2xl"></i>
+          <div><span class="javascript">CSS</span></div>
+        </div>
+        <div class="d-inline-block text-center mx-2">
+          <i class="fa-brands fa-react fa-2xl"></i>
+          <div><span class="javascript">React</span></div>
+        </div>
+        <div class="d-inline-block text-center mx-2">
+          <i class="fa-brands fa-laravel fa-2xl"></i>
+          <div><span class="javascript">Laravel</span></div>
+        </div>
+        <div class="d-inline-block text-center mx-2">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M43.982,23.635c0.069,-4.261 -0.891,-9.328 -2.891,-15.273l-1.568,-4.662l-2.13,4.433c-0.114,0.237 -0.244,0.469 -0.38,0.698c-3.499,-3.004 -8.039,-4.831 -13.013,-4.831c-11.046,0 -20,8.954 -20,20c0,11.046 8.954,20 20,20c11.046,0 20,-8.954 20,-20c0,-0.123 -0.016,-0.242 -0.018,-0.365z" fill="#000000"></path><path d="M39.385,32.558c-3.123,4.302 -8.651,4.533 -13.854,4.442h-6.781h-1.938c4.428,-1.593 7.063,-1.972 9.754,-3.4c5.068,-2.665 10.078,-8.496 11.121,-14.562c-1.93,5.836 -7.779,10.85 -13.109,12.889c-3.652,1.393 -10.248,2.745 -10.248,2.745l-0.267,-0.145c-4.49,-2.259 -4.626,-12.313 3.537,-15.559c3.574,-1.423 6.993,-0.641 10.854,-1.593c4.122,-1.012 8.89,-4.208 10.83,-8.375c2.172,6.667 4.786,17.106 0.101,23.558zM15.668,38.445c-0.282,0.35 -0.713,0.555 -1.163,0.555c-0.823,0 -1.495,-0.677 -1.495,-1.5c0,-0.823 0.677,-1.5 1.495,-1.5c0.341,0 0.677,0.118 0.941,0.336c0.64,0.519 0.74,1.469 0.222,2.109z" fill="#ffffff"></path></g></g>
+            </svg>
+          <div><span class="javascript">Springboot</span></div>
+        </div>
+        <div class="d-inline-block text-center mx-2">
+          <i class="fa-brands fa-bootstrap fa-2xl"></i>
+          <div><span class="javascript">Bootstrap</span></div>
+        </div>
+        <div class="d-inline-block text-center mx-2">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 24 24">
+            <path d="M 11 3 L 11 8.1582031 C 10.653 8.0172031 9.9041562 8 9.5351562 8 C 6.7591563 8 4.1894531 9.306 4.1894531 13 C 4.1894531 17.42 7.67 18 10 18 C 10.92 18 13 17.909141 14 17.619141 L 14 3 L 11 3 z M 16 3 L 16 6 L 19 6 L 19 3 L 16 3 z M 16 8 L 16 16.701172 C 16 18.217172 15.078 19.795172 13 20.701172 L 15.859375 21.996094 C 18.765375 20.996094 19 17.701172 19 16.701172 L 19 8 L 16 8 z M 9.9707031 10.550781 C 10.290703 10.550781 10.65 10.609453 11 10.689453 L 11 15.392578 C 10.65 15.472578 10.290703 15.533203 9.9707031 15.533203 C 8.6607031 15.533203 7.390625 15.12 7.390625 13 C 7.390625 10.88 8.6607031 10.550781 9.9707031 10.550781 z"></path>
+            </svg>
+          <div><span class="javascript">Django</span></div>
+        </div>
+        <div class="d-inline-block text-center mx-2">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+            <path fill="#212121" d="M23.697,37.56h1.18c0.84,0,1.631-0.392,2.139-1.061l7.485-9.847l7.485,9.847	c0.508,0.668,1.299,1.061,2.139,1.061h1.18L35.756,25l9.121-12h-1.18c-0.84,0-1.631,0.392-2.139,1.061L34.5,23.347l-7.059-9.287	C26.933,13.392,26.142,13,25.302,13h-1.18l9.121,12L23.697,37.56z"></path><path fill="#212121" d="M24,26v-3c0-6.675-5.945-11.961-12.829-10.852C5.812,13.011,2,17.857,2,23.284L2,24v2v0.142	c0,6.553,4.777,11.786,10.868,11.858c5.092,0.06,9.389-3.344,10.707-7.999h-1.028c-0.62,0-1.182,0.355-1.451,0.913	c-1.739,3.595-5.789,5.862-10.228,4.842C6.776,34.815,4,30.981,4,26.783V26H24z M4,23.71c0-4.708,2.804-8.557,6.924-9.478	C16.798,12.92,22,17.352,22,23v1H4V23.71z"></path>
+            </svg>
+          <div><span class="javascript">Express</span></div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 py-3 p-md-5 order-md-1" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom">
+        <img id="img" src="./img/techtools.jpg" alt="" class="img-fluid h-100 w-100">
+      </div>
+    </div>
+  </section>
+  <section class="container py-5 my-5" id="my-project">
+    <h1 class="text-center text-primary pb-2" id="projects">My Recent Works</h1>
+    <div class="card mb-3 my-5"  data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom">
+      <div class="row">
+        <div class="col-12 col-md-6 p-5">
+          <img src="./img/capstone1.gif" class="img-fluid w-100 h-100" alt="...">
+        </div>
+        <div class="col-12 col-md-6 p-5 d-flex justify-content-center align-items-center text-center">
+          <div class="card-body ">
+            <h5 class="card-title">Simple Creating Task and Event</h5>
+            <p class="card-text">I created this simple website using Python, Django, and MySQL. It is about creating tasks and events. <br/><a href="https://github.com/Janny0222/djangoproject" target="_blank" class="text-primary"><em>Code here</em></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 my-5"  data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom">
+      <div class="row">
+        <div class="col-12 col-md-6 p-5">
+          <img src="./img/blogapi.gif" class="img-fluid w-100 h-100" alt="...">
+        </div>
+        <div class="col-12 col-md-6 p-5 d-flex justify-content-center align-items-center text-center">
+          <div class="card-body">
+            <h5 class="card-title">Blog API</h5>
+            <p class="card-text">This is about creating a simple blog using Java Spring Boot, and it is a REST API that I utilized with POSTMAN. <br/><a href="https://github.com/Janny0222/javaproject" target="_blank" class="text-primary"><em>Code here</em></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 my-5"  data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom">
+      <div class="row">
+        <div class="col-12 col-md-6 p-5">
+          <img src="./img/capstone2.gif" class="img-fluid w-100 h-100" alt="...">
+        </div>
+        <div class="col-12 col-md-6 p-5 d-flex justify-content-center align-items-center text-center">
+          <div class="card-body">
+            <h5 class="card-title">E-Commerce API</h5>
+            <p class="card-text">Creating a REST API for e-commerce website. <br/><a href="https://github.com/Janny0222/expressproject" target="_blank" class="text-primary"><em>Code here</em></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 my-5" data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom">
+      <div class="row">
+        <div class="col-12 col-md-6 p-5" >
+          <img src="./img/capstone3.gif" class="img-fluid w-100 h-100" alt="...">
+        </div>
+        <div class="col-12 col-md-6 p-5 d-flex justify-content-center align-items-center text-center">
+          <div class="card-body ">
+            <h5 class="card-title">Simple E-Commerce Website</h5>
+            <p class="card-text">This is my 3rd project. Creating a simple website with REST API e-commerce. That allows the user to add to cart and checkout order. <br/><a href="https://apple-de-app.vercel.app/" target="_blank" class="text-primary"><em>Visit here</em></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section id="contact-me">
+    <div class="pt-5 container-fluid" data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom">
+      <h6 class=" text-black text-center">For inquiry, Send a Message below</h6>
+         <div class="row row-cols-1 row-cols-md-2 justify-content-center">
+           <!-- <div class="offset-xl-2 col-md-4 px-5 pt-4 justify-content-center"> -->
+             <div class="col-xl-4 px-5 pt-4 ">
+                <form id="form-col" class="bg-primary text-light shadow-lg p-3 mb-5 rounded ">
+                  <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
                   </div>
-                  <div class="text-center"><h6>---Or---</h6></div>
-        <section>
-          <div class="pt-5 container-fluid">
-            <h5 class=" text-black text-center">Get in touch</h5>
-               <div class="row row-cols-1 justify-content-center">
-                 <!-- <div class="offset-xl-2 col-md-4 px-5 pt-4 justify-content-center"> -->
-                   <div class="col-md-5">
-                    
-                      <ol class="ol-link d-flex justify-content-center border-top border-bottom p-1 mb-5 rounded w-100 py-3" >
-                        <a class="text-decoration-none d-inline-flex" href="https://www.facebook.com/jnmchlvllrl.25/" target="_blank"> <img class="link-img1 img-fluid mx-3" src="./img/facebook.png" width="30"><li class="text-dark soc-med d-none d-lg-block"></li></a>
-                        <a class="text-decoration-none d-inline-flex" href="https://www.instagram.com/jnmchlvllrl/" target="_blank"><img class="link-img2 img-fluid mx-3" src="./img/instagram.png" width="30"><li class="text-dark soc-med d-none d-lg-block"> </li></a>
-                        <a class="text-decoration-none d-inline-flex" href="https://www.linkedin.com/in/jan-michael-villaruel-589b53170/" target="_blank"> <img class="link-img3 img-fluid mx-3" src="./img/linkedIn.png" width="30"><li class="text-dark soc-med d-none d-lg-block"></li></a>
-                        <a class="text-decoration-none d-inline-flex" href="https://twitter.com/jnmchlvllrl" target="_blank"> <img class="link-img4 img-fluid mx-3 my-0" src="./img/twitter.png" width="30"><li class="text-dark soc-med d-none d-lg-block"></li></a>
-                      </ol>
-                    
+                  <div class="form-group">
+                      <label for="email">Email Address</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="contact-number">Contact Number</label>
+                      <input type="number" class="form-control" id="contact-number" placeholder="Enter your contact number" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="concern">Concern</label>
+                      <select class="form-control" id="concern">
+                        <option value="">Select a concern</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="support">Support Request</option>
+                        <option value="feedback">Feedback</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                  </div>
+                  <button type="button" class="btn btn-dark m-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Send Email</button>
+                </form>
+             </div>
+         </div>
+    </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header bg-secondary-subtle">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Thank you for your mesage </h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                          <div class="modal-body"><p>Successfully Sent!</p>
+                          </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
                    </div>
-               </div>
-          </div>
-        </section>
-    </section>
-    <!-- End of Contact Section -->
-      
-      <!-- Footer Section -->
-    <footer class="container-fluid bg-black px-0">
-    
-      <p class="bg-secondary-subtle text-center text-dark small text-wrap py-3 mb-0">&copy; 2023 My 1st Portfolio. All rights reserved. | Designed by Jan Michael Villaruel </p>
-    </footer>
-      <!-- End of Footer Section -->
-  </main>
- 
+                </div>
+  </section>
 
-  <script>
-  AOS.init();
-  </script>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Footer Section -->
+  <footer class="container-fluid bg-dark px-0">
+    <ol class="d-flex justify-content-center p-1 m-0 rounded w-100 py-3" >
+      <a class="text-decoration-none d-inline-flex" href="https://www.facebook.com/jnmchlvllrl.25/" target="_blank"> <i class="mx-3 fa-brands fa-facebook"></i><li class="text-dark soc-med d-none d-lg-block"></li></a>
+      <a class="text-decoration-none d-inline-flex" href="https://www.instagram.com/jnmchlvllrl/" target="_blank"><i class="mx-3 fa-brands fa-instagram"></i><li class="text-dark soc-med d-none d-lg-block"> </li></a>
+      <a class="text-decoration-none d-inline-flex" href="https://www.linkedin.com/in/jan-michael-villaruel-589b53170/" target="_blank"> <i class="mx-3 fa-brands fa-linkedin"></i><li class="text-dark soc-med d-none d-lg-block"></li></a>
+      <a class="text-decoration-none d-inline-flex" href="https://twitter.com/jnmchlvllrl" target="_blank"> <i class="mx-3 fa-brands fa-square-twitter"></i><li class="text-dark soc-med d-none d-lg-block"></li></a>
+    </ol>
+    <p class="bg-secondary-subtle text-center text-dark small text-wrap mb-0"><strong>&copy; 2023 My Portfolio | Jan Michael Villaruel </strong></p>
+    
+  </footer>
+    <!-- End of Footer Section -->
+
 </body>
+
+ <!-- Bootstrap script -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/edf2c256f9.js" crossorigin="anonymous"></script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+ <!-- External script -->
+<script src="./script/script.js"></script>
 </html>

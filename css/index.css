@@ -1,0 +1,153 @@
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+.navbar{
+  padding: 0 !important;
+}
+
+body, html {
+  
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  background-position-y: center;
+}
+body {
+  overflow-x: auto !important;
+}
+a{
+  color: rgb(0, 0, 0) !important;
+  font-weight: bold;
+}
+a h1 {
+  font-weight: bolder;
+  font-family: 'Montserrat' !important; 
+  font-weight: 900 !important;
+  letter-spacing: -4px;
+  margin-left: 1rem;
+}
+#landing {
+  height: 100vh;
+  width: 100%;
+}
+#landing-title {
+  font-family: 'DotGothic16' !important;
+  font-weight: 900 !important;
+  font-size: 1.5rem !important;
+}
+.fw-normal .pre-title {
+  color: rgb(0, 0, 0) !important;
+  font-family: 'DotGothic16' !important;
+  font-weight: bold;
+  font-size: 1.5rem !important;
+}
+
+#landing-name {
+  font-size: 3rem;
+  font-weight: 900 !important;
+}
+
+.landing-name {
+  font-family: 'DotGothic16' !important;
+  font-weight: 900 !important;
+  font-size: 2rem;
+  color: black !important;
+}
+.text-center{
+  text-align: center !important;
+}
+.d-flex span {
+  font-family: 'Montserrat' !important;
+}
+.container div div img {
+  border-radius: 2rem !important;
+  height: 15rem ;
+  width: 10rem ;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .lastname {
+    letter-spacing: .5rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .name-container {
+      flex-direction: row;
+      text-align: center;
+  }
+}
+@media screen and (min-width: 1300px) {
+  #landing-name {
+    font-size: 5rem !important;
+    margin: -1rem !important;
+    padding: -1rem !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #landing-title, .fw-normal .pre-title{
+    font-size: 2.5rem !important;
+  }
+  
+}
+
+.techSkills{
+  width: 30px !important;
+  height: 30px !important;
+  margin-right: .2rem !important;
+}
+section div h1, h3 {
+  font-weight: 700 !important;
+}
+.bg-dark{
+  background-color: rgb(201, 201, 201) !important;
+}
+#projects{
+  font-weight: 700;
+}
+.tools{
+  font-family: 'League Spartan', sans-serif;
+  text-align: justify !important;
+  
+}
+.tools h3{
+  font-weight: 900;
+}
+.about-me1 p {
+  text-align: justify !important;
+}
+.javascript {
+  font-size: 0.8rem;
+}
+.techs {
+  text-align: justify !important;
+}
+.express {
+  margin-bottom: 1rem !important;
+}
+.about-bg {
+  z-index: -10;
+  position: absolute;
+}
+.secondary-about {
+  opacity: .1;
+  display: block;
+  color: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20rem;
+}
