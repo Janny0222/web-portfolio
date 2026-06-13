@@ -1,4 +1,4 @@
-const titles = ["Web Developer", "Full-Stack Developer", "Next.js Developer"];
+const titles = ["Full-Stack Developer", "MERN Stack Developer", "Web Developer"];
 const titleElement = document.getElementById("landing-title");
 let titleIndex = 0;
 let charIndex = 0;

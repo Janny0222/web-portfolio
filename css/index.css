@@ -108,14 +108,14 @@ section div h1, h3 {
   transition: transform .3s ease;
 }
 
-.nav-shell {
+#navbar .nav-shell {
   background: var(--navbar-bg);
   -webkit-backdrop-filter: saturate(180%) blur(14px);
   backdrop-filter: saturate(180%) blur(14px);
   border: 1px solid var(--border);
   border-radius: 999px;
   box-shadow: var(--shadow);
-  padding: .4rem .65rem .4rem 1.4rem;
+  padding: .45rem .65rem .45rem 1.35rem !important;
 }
 
 /* Brand */
@@ -182,16 +182,30 @@ section div h1, h3 {
   color: var(--text);
 }
 
-/* On mobile the floating pill opens into a panel */
+/* On mobile the floating pill opens into a clean rounded panel */
 @media (max-width: 991.98px) {
+  #navbar .nav-shell {
+    border-radius: 1.25rem !important;
+    padding: .5rem .85rem !important;
+  }
   #navbarSupportedContent {
     width: 100%;
     margin-top: .5rem;
     padding-top: .5rem;
     border-top: 1px solid var(--border);
   }
+  #navbarSupportedContent .navbar-nav,
+  #navbarSupportedContent .nav-item {
+    width: 100%;
+  }
   .nav-link.menu {
     text-align: center;
+    padding: .7rem 1rem !important;
+    border-radius: .6rem;
+    margin: .1rem 0;
+  }
+  .nav-link.menu::after {
+    display: none;
   }
 }
 
@@ -219,9 +233,10 @@ section div h1, h3 {
    LANDING / HERO
    ========================================================= */
 #landing {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   position: relative;
+  padding: 6rem 1rem 3rem;
 }
 
 .hero-inner {
