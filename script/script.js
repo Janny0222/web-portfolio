@@ -1,4 +1,4 @@
-const titles = ["Web Developer"];
+const titles = ["Web Developer", "Full-Stack Developer", "Next.js Developer"];
 const titleElement = document.getElementById("landing-title");
 let titleIndex = 0;
 let charIndex = 0;
@@ -61,3 +61,28 @@ scrollTimeout = setTimeout(function () {
 
 let scrollTimeout;
 window.addEventListener("scroll", handleScroll);
+
+/* ===== Dark mode toggle ===== */
+const themeToggle = document.getElementById("theme-toggle");
+const themeIcon = themeToggle ? themeToggle.querySelector("i") : null;
+
+function applyTheme(theme) {
+    const isDark = theme === "dark";
+    document.body.classList.toggle("dark-theme", isDark);
+    if (themeIcon) {
+        themeIcon.classList.toggle("fa-moon", !isDark);
+        themeIcon.classList.toggle("fa-sun", isDark);
+    }
+}
+
+const savedTheme = localStorage.getItem("theme")
+    || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+applyTheme(savedTheme);
+
+if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
+        const next = document.body.classList.contains("dark-theme") ? "light" : "dark";
+        localStorage.setItem("theme", next);
+        applyTheme(next);
+    });
+}
